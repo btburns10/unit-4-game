@@ -40,6 +40,8 @@ function initGame() {
     gem2 = generateRandoNum();
     gem3 = generateRandoNum();
     gem4 = generateRandoNum();
+    $("#winCount").text(wins);
+    $("#lossCount").text(losses);
 }
 
 //button interactivity
@@ -47,7 +49,7 @@ $(document).ready(function() {
 
     initGame();
 
-    $("#btn-1").on("click", function() {
+    $("#btn").on("click", function() {
         counter += gem1;
         $("#count").text(counter);
         checkScore();

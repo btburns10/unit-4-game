@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+}
+
+.orb {
+    width: 300px;
+    height: 250px;
+    background-image: url("assets/images/gemorb.jpg");
+}

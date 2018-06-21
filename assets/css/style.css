@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    background-image: url("../images/background.png");
+    background-size: cover;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.navbar-brand {
+    font-size: 24px;
+}
+
+.row {
+    margin-left: 10px;
+}
+
+.instructions {
+    background: white;
+    margin: 10px 10px 10px 0;
+}
+
+.orb {
+    width: 180px;
+    height: 140px;
+    margin: 5px 10px 20px 10px;
+    background-image: url("../images/gemorb.jpg");
+    border: 0.1px solid #d6d6d6;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.targetFlex {
+    display: flex;
+    flex-direction: row;
+}
+
+#targetNum {
+    font-size: 40px;
+    padding-left: 50px;
+}
+
+.winningDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.wins {
+    width: 100px;
+    height: 60px;
+    background: green;
+    margin: 10px 0;
+    padding-left: 2px;
+}
+
+.losses {
+    width: 100px;
+    height: 60px;
+    background: red;
+    padding-left: 2px;
+}
+
+.score {
+    width: 180px;
+    height: 100px;
+    margin: 0 10px 10px 10px;
+    background: white;
+    border: 0.1px solid #d6d6d6;
+    color: black;
+    padding-left: 10px;
+}

@@ -1,33 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Bootstrap CSS-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <!-- My Style CSS-->
-  <link rel="mystylesheet" href="assets/css/style.css" type="text/css">
   <!-- jQuery link-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-  <title>Crystal Game</title>  
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <!-- My Style CSS-->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron:500" rel="stylesheet">
+  
+  <title>Crystal Game</title> 
 
 </head>
 
 <body>
-<p>Target Number:  <span id="targetNum"></span></p>
-<p>Gem #1 Power:  <span id="gem-1"></span></p>
 
-<div id="count" class="alert alert-danger" role="alert"></div>
+<nav class="navbar navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand">Crystal Gem Game</a>
+  </div>
+</nav>
 
+<div class="main-background">
+  <div class="row instuctionsDiv">
+    <div class="col-lg-6 instructions">
+      <p>You will be given a random number from #19-120 at the start of the game.</p>
+      <p>There are four crystal gems located below.  The value of the gems are hidden until clicked.  By click on a gem you will add a specific amount of points to your total score.</p>
+      <p>The objective of the game is to match your score to the random target number.  You lose the game by increasing your score above the target number.</p>
+      <p>Each time the game restarts, the value of the target number and each gem will change.  Good Luck!</p>
+    </div>
+  </div>
 
-<button id="btn-1" class="btn btn-primary btn-lg fa fa-question"></button>
-<button id="btn-2" class="btn btn-primary btn-lg fa fa-question"></button>
-<button id="btn-3" class="btn btn-primary btn-lg fa fa-question"></button>
-<button id="btn-4" class="btn btn-primary btn-lg fa fa-question"></button>
+<div class="targetFlex">
+  <div class="orb">
+    <p>Target Number:</p>
+    <span id="targetNum"></span>
+  </div>
+  <div class="winningDiv">
+    <div class="wins">
+      <p>Wins:</p>
+      <span id="winCount"></span>
+    </div>
+    <div class="losses">
+      <p>Losses:</p>
+      <span id="lossCount"></span>
+    </div>
+  </div>
+</div>
 
+<div class="score">
+  <p>Total Score:</p>
+  <span id="count"></span>
+</div>
+
+<div class="gemStones">
+  <img id="btn-3" src="assets/images/gem-3.png "width=120px" "height=75px">  
+  <img id="btn" src="assets/images/gem-1.png "width=75px" "height=75px">
+  <img id="btn-2" src="assets/images/gem-2.png "width=100px" "height=100px">
+  <img id="btn-4" src="assets/images/gem-4.png "width=75px" "height=75px">
+</div>
+</div>
 
 
 
@@ -46,3 +81,4 @@
 <script src="assets/javascript/game.js"></script>
 
 </body>
+</html>
